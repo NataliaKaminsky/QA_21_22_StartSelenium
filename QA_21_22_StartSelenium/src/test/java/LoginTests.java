@@ -2,6 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class LoginTests {
     WebDriver wd;
@@ -14,7 +15,7 @@ public class LoginTests {
         //opet site
     }
 
-    @test
+    @Test
     public void loginSuccess() {
         //open form (find element + click)
         //fill in email (find elememt+click+clear+type)
@@ -22,14 +23,14 @@ public class LoginTests {
         //submit form (find element + click)
     }
 
-    @test
+    @Test
     public void loginWrongEmail() {
         //open form
         //fill in form
         //submit
     }
 
-    @test
+    @Test
     public void loginWrongPassword() {
         //open form
         //fill in form
@@ -37,7 +38,7 @@ public class LoginTests {
     }
 
     @AfterClass
-    public void postConditions
+    public void postConditions()
 
     {
         wd.close();//close browser
