@@ -20,7 +20,7 @@ public class Homeworks {
     @Test
     public void cssLocators() {
 
-        //by tagname
+        //by tag-name
         WebElement el = wd.findElement(By.tagName("body"));
         WebElement element = wd.findElement(By.cssSelector("body"));
 
@@ -49,7 +49,7 @@ public class Homeworks {
         WebElement element7 = wd.findElement(By.cssSelector(".container"));
         WebElement elem8;
         WebElement xEl7 = By.xpath(//*[@class='container']));
-                WebElement elem8 = wd.findElement(By.className("navbar-component_nav__1X_4m"));
+                WebElement el8 = wd.findElement(By.className("navbar-component_nav__1X_4m"));
         WebElement element8 = wd.findElement(By.cssSelector(".navbar-component_nav__1X_4m"));
 
         WebElement el9 = wd.findElement(By.className("active"));
@@ -80,9 +80,8 @@ public class Homeworks {
         WebElement xEl19 = wd.findElement(By.xpath("//input[starts-with(@placeholder,'Em')]"));
 
         WebElement el20 = wd.findElement(By.cssSelector("[placeholder$='il']"));
-                WebElement el21 = wd.findElement(By.cssSelector("[placeholder*='Email']"));
+        WebElement el21 = wd.findElement(By.cssSelector("[placeholder*='Email']"));
         WebElement xEl20 = wd.findElement(By.xpath("//input[contains(@placeholder,'ma')]"));
-
 
 
     }
